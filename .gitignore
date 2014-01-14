@@ -1,3 +1,4 @@
 node_modules
 .apk_repo
 *~
+test-reports.xml

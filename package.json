@@ -7,7 +7,8 @@
   },
   "main": "lib/updater.js",
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/.bin/mocha --reporter xunit --ui tdd test/ > test-reports.xml",
+    "test-w": "./node_modules/.bin/mocha --reporter dot --ui tdd --growl --watch test/"
   },
   "repository": {
     "type": "git",
