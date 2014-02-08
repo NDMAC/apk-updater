@@ -5,18 +5,16 @@ Android's apk automatic updater server module for [Node.js](http://nodejs.org/) 
 
 See [android-auto-updater-client](https://github.com/NDMAC/android-auto-updater-client) for Android's client library.
 
-## Getting Started
-
-### Installation
+## Installation
 
 Install with [npm](https://github.com/npm/npm) :
 ```
 npm install apk-updater
 ```
 
-### Public API
+## Public API
 
-#### enable(app, route, repoDir)
+### enable(app, route, repoDir)
 
 Enables update server module.
 - **app** parent Express application (required)
@@ -35,19 +33,22 @@ This will enable both post GET and POST methods for '/anyUpdateServerRoute' in '
 
 In the above example the 'http://yourserver/anyUpdateServerRoute' URL will return the list of all available APK packages as a JSON list.
 
-### Configuration
+## Configuration
 
-#### APK Directory
+### APK Directory
 
 To change APK directory an extra parameter is needed during initialization. Eg.
 ```javascript
 enable(app, '/anyUpdateServerRoute', 'myDirectory');
 ```
 
-### Client usage
+## Client usage
+
+See [android-auto-updater-client](https://github.com/NDMAC/android-auto-updater-client) for client implementation.
+
+### Provided routes
 
 HTTP GET method returns a JSON list of all available packages.
 
-HTTP POST method with 'pkgname' and 'version' parameters returns a download URL if an update is available for the given package and version.
+HTTP POST method with 'pkgname' and 'version' parameters returns an auto-generated download URL if an update is available for the given package and version.
 
-See [android-auto-updater-client](https://github.com/NDMAC/android-auto-updater-client) for client implementation.
