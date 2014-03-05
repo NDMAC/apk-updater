@@ -1,6 +1,6 @@
 {
   "name": "apk-updater",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Express module for apk auto-updater",
   "directories": {
     "test": "test"
