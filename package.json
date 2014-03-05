@@ -20,7 +20,8 @@
   ],
   "dependencies": {
     "underscore": "*",
-    "node-uuid": "*"
+    "node-uuid": "*",
+    "winston": "*"
   },
   "devDependencies": {
     "mocha": "*",
