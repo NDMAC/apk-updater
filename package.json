@@ -29,5 +29,5 @@
     "express": "3.x"
   },
   "author": "G.Bourel",
-  "license": "Apache"
+  "license": "Apache-2.0"
 }
